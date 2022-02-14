@@ -33,4 +33,9 @@ class Chain:
             block = Block(data, self.blocks[-1].hash)  
             block.mine(self.difficulty)
             self.add_to_chain(block)
-            
+            print("\n\n==================================================================================")
+            print("Hash: \t\t", block.hash.hexdigest())
+            print("Prev Hash: \t", block.previous_hash.hexdigest())
+            print("Nonce: \t\t", block.nonce)
+            print("Data: \t\t", block.data)
+            print("\n\n==================================================================================")            

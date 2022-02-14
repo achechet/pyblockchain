@@ -8,6 +8,4 @@ while (True):
     data = input("Add something to the chain: ")
     chain.add_to_pool(data)
     chain.mine()
-    print(chain.blocks[i])
-    i += 1
         
